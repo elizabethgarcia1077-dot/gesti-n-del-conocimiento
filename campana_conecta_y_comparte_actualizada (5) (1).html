@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Campaña de buenas prácticas sobre la relación entre gestión del conocimiento, gestión de la información y gestión documental.">
+<title>Conecta y Comparte | Buenas prácticas</title>
+<style>
+:root{--navy:#083d67;--blue:#0879b9;--sky:#eaf7ff;--mint:#eaf8ef;--purple:#f1efff;--ink:#173b57;--muted:#506a7e;--white:#fff;--gold:#f7bd4b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #dceaf2;z-index:10}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;gap:12px;align-items:center;text-decoration:none;font-weight:800;color:var(--navy);font-size:1.1rem}.brand-mark{width:44px;height:44px;border-radius:14px;background:var(--navy);color:white;display:grid;place-items:center;font-size:1.45rem}.brand small{display:block;font-size:.72rem;font-weight:500;color:var(--muted)}nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;font-size:.91rem;font-weight:650}nav a:hover{color:var(--blue)}.nav-cta,.btn{background:var(--navy);color:white;border:0;border-radius:999px;padding:12px 18px;font-weight:750;text-decoration:none;display:inline-flex;align-items:center;gap:8px;cursor:pointer}.menu-btn{display:none;background:white;border:1px solid #d4e4ee;border-radius:10px;padding:8px 12px;color:var(--navy);font-size:1.2rem}
+.hero{background:linear-gradient(110deg,#eaf7ff 0%,#f7fcff 58%,#d8eff5 100%);padding:62px 0 58px;overflow:hidden;position:relative}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:center}.eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.12em;color:#0879b9;font-weight:800;font-size:.76rem;margin-bottom:12px}.hero h1{font-size:clamp(2.2rem,4.2vw,4rem);line-height:1.08;letter-spacing:-.04em;margin:0 0 20px;color:var(--navy)}.hero h1 span{color:#1684b6}.hero p{font-size:1.13rem;max-width:620px;color:#355d79}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn.secondary{background:white;color:var(--navy);border:1px solid #b8d6e8}.hero-art{min-height:330px;position:relative;display:grid;place-items:center}.desk{width:100%;height:280px;border-radius:28px;background:linear-gradient(145deg,#d2e8e9,#f9f0dc);box-shadow:0 24px 50px #164a6a20;position:relative;overflow:hidden}.desk:before{content:"";position:absolute;width:52%;height:180px;left:8%;top:45px;border-radius:12px;background:linear-gradient(145deg,#fff,#d8e5ec);box-shadow:0 10px 20px #24485b20;transform:rotate(-7deg)}.desk:after{content:"";position:absolute;width:42%;height:100px;left:12%;top:90px;border-radius:8px;background:repeating-linear-gradient(0deg,#fff 0 10px,#d8eaf3 11px 12px);transform:rotate(-7deg);box-shadow:0 8px 15px #24485b22}.pen{position:absolute;width:160px;height:9px;background:#163b56;left:22%;top:205px;transform:rotate(-18deg);border-radius:99px;z-index:2}.blocks{position:absolute;right:7%;top:16px;display:grid;gap:8px;z-index:3}.block{width:170px;min-height:82px;background:#fffaf0;border:1px solid #e2d2ad;border-radius:12px;box-shadow:0 9px 15px #173b5722;display:flex;align-items:center;gap:12px;padding:12px;color:var(--navy);font-weight:800}.block b{font-size:1.75rem}.block:nth-child(2){background:#f3fbff}.block:nth-child(3){background:#f0faf2}.float-note{position:absolute;bottom:2px;left:0;background:white;border:1px solid #d7eaf4;border-radius:14px;padding:12px 16px;box-shadow:0 8px 20px #17405a12;font-weight:700;color:var(--navy)}
+section{padding:64px 0}.section-head{max-width:760px;margin-bottom:30px}.section-head h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.15;color:var(--navy);margin:0 0 12px;letter-spacing:-.025em}.section-head p{margin:0;color:var(--muted);font-size:1.04rem}.relationship{display:grid;grid-template-columns:1fr 1.5fr;gap:38px;align-items:center}.flow{display:grid;grid-template-columns:1fr 28px 1fr 28px 1fr;gap:8px;align-items:center}.flow-card{padding:22px 16px;border-radius:18px;min-height:200px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}.flow-card:nth-child(1){background:var(--sky)}.flow-card:nth-child(3){background:var(--mint)}.flow-card:nth-child(5){background:var(--purple)}.ico{width:58px;height:58px;border-radius:50%;background:#ccecff;display:grid;place-items:center;font-size:1.8rem;margin-bottom:12px}.flow-card:nth-child(3) .ico{background:#c8efd3}.flow-card:nth-child(5) .ico{background:#d8d2ff}.flow-card h3{font-size:1rem;line-height:1.25;margin:0 0 9px;color:var(--navy)}.flow-card p{font-size:.88rem;margin:0;color:#46647a}.arrow{text-align:center;color:#0879b9;font-size:1.6rem;font-weight:900}
+.practices{background:linear-gradient(180deg,#f2faff,#fff)}.practice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.practice{background:white;border:1px solid #dcecf4;border-radius:18px;padding:22px;box-shadow:0 8px 24px #164a6a08;transition:transform .2s,box-shadow .2s}.practice:hover{transform:translateY(-4px);box-shadow:0 15px 28px #164a6a14}.practice-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}.num{width:36px;height:36px;border-radius:50%;background:#cdeeff;color:var(--navy);font-weight:900;display:grid;place-items:center;flex-shrink:0}.practice:nth-child(2) .num{background:#c9efd5}.practice:nth-child(3) .num{background:#ffe7b4}.practice:nth-child(4) .num{background:#bdf3f3}.practice:nth-child(5) .num{background:#f7d4f2}.practice:nth-child(6) .num{background:#dcd7ff}.practice .symbol{font-size:1.6rem}.practice h3{margin:0;color:var(--navy);font-size:1.08rem}.practice p{margin:0;color:var(--muted);font-size:.94rem}.practice .try{display:inline-block;margin-top:12px;color:#0879b9;font-size:.88rem;font-weight:800;text-decoration:none}
+.check-section{background:#f5fbf8}.check-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:34px;align-items:start}.check-panel{background:white;border:1px solid #dceee3;border-radius:20px;padding:26px;box-shadow:0 8px 25px #174b3010}.check-panel h3{margin-top:0;color:var(--navy)}.checklist{list-style:none;padding:0;margin:0}.checklist li{padding:12px 0;border-bottom:1px solid #e8f0f3}.checklist li:last-child{border-bottom:0}.checklist label{display:flex;gap:12px;align-items:flex-start;cursor:pointer}.checklist input{margin-top:6px;accent-color:#0879b9;width:18px;height:18px;flex-shrink:0}.progress{height:9px;background:#e4eef2;border-radius:99px;overflow:hidden;margin:16px 0 8px}.progress span{display:block;width:0;height:100%;background:#159c8b;transition:width .2s}.progress-copy{font-size:.9rem;color:var(--muted)}.scenario{background:#fff;border:1px solid #dceaf2;border-radius:20px;padding:26px}.scenario h3{margin-top:0;color:var(--navy)}.scenario-options{display:grid;gap:10px;margin:16px 0}.scenario button.option{padding:13px 15px;text-align:left;background:#f7fbfe;border:1px solid #d7e8f1;border-radius:12px;color:var(--ink);font:inherit;cursor:pointer}.scenario button.option:hover,.scenario button.option:focus{border-color:#0879b9;background:#eaf7ff}.feedback{min-height:48px;background:#f0f7fa;border-radius:12px;padding:12px 14px;color:var(--ink);font-size:.95rem}
+.resources{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.resource{border-radius:16px;padding:22px;background:#f2f9ff;border:1px solid #d9eaf5}.resource:nth-child(2){background:#f2fbf4;border-color:#d9efdf}.resource:nth-child(3){background:#f7f4ff;border-color:#e3def9}.resource h3{margin:0 0 8px;color:var(--navy)}.resource p{margin:0;color:var(--muted);font-size:.93rem}.closing{padding:0 0 64px}.closing-inner{background:linear-gradient(110deg,#dff6fa,#eaf7ff);border-radius:24px;padding:30px 34px;display:flex;justify-content:space-between;align-items:center;gap:20px}.closing h2{margin:0 0 7px;color:var(--navy);font-size:1.65rem}.closing p{margin:0;color:#365d77}.closing .seal{font-size:3rem}footer{background:#083d67;color:#eaf7ff;padding:26px 0;font-size:.9rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer p{margin:0}footer a{color:white}
+@media(max-width:900px){nav{gap:12px}nav a{font-size:.82rem}.hero-grid{grid-template-columns:1fr 1fr;gap:20px}.relationship,.check-grid{grid-template-columns:1fr}.flow{max-width:850px}.practice-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.nav{min-height:64px}.menu-btn{display:block}.nav-cta{display:none}nav{display:none;position:absolute;top:64px;left:0;right:0;background:white;padding:16px 5%;border-bottom:1px solid #dceaf2;flex-direction:column;align-items:flex-start}nav.open{display:flex}.hero{padding:44px 0}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:270px}.desk{height:235px}.block{width:145px;min-height:66px;font-size:.85rem}.block b{font-size:1.4rem}.float-note{font-size:.83rem}.flow{grid-template-columns:1fr;gap:8px}.flow-card{min-height:unset;padding:20px}.arrow{transform:rotate(90deg)}section{padding:48px 0}.practice-grid,.resources{grid-template-columns:1fr}.closing-inner{padding:24px;align-items:flex-start}.closing .seal{font-size:2rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#inicio"><span class="brand-mark">▤</span><span>Conecta &amp; Comparte<small>Información que genera conocimiento</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav id="nav">
+   <a href="#inicio">Inicio</a><a href="#relacion">¿Cómo se relacionan?</a><a href="#buenas-practicas">Buenas prácticas</a><a href="#recursos">Recursos</a><a href="#fuentes">Fuentes</a><a href="#pongamoslo">¡A practicar!</a>
+  </nav>
+  <a class="nav-cta" href="#pongamoslo">✦ Aprende · Aplica · Comparte</a>
+ </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="eyebrow">Campaña de socialización</span>
+   <h1>La información se gestiona, <span>el conocimiento se comparte.</span></h1>
+   <p>La gestión del conocimiento, la gestión de la información y la gestión documental trabajan juntas para que las organizaciones aprendan, colaboren y tomen mejores decisiones.</p>
+   <div class="hero-actions"><a class="btn" href="#buenas-practicas">Descubre las buenas prácticas <span aria-hidden="true">→</span></a><a class="btn secondary" href="#relacion">Conoce la relación</a></div>
+  </div>
+  <div class="hero-art" aria-label="Ilustración de escritorio y bloques de conocimiento, información y documentos" role="img">
+   <div class="desk"></div><div class="pen"></div>
+   <div class="blocks"><div class="block"><b>✦</b><span>CONOCIMIENTO</span></div><div class="block"><b>⌕</b><span>INFORMACIÓN</span></div><div class="block"><b>▱</b><span>DOCUMENTOS</span></div></div>
+   <div class="float-note">Pequeñas acciones, grandes resultados 🌱</div>
+  </div>
+ </div>
+</section>
+<section id="relacion">
+ <div class="wrap relationship">
+  <div class="section-head">
+   <span class="eyebrow">Una relación que suma</span>
+   <h2>¿Cómo se complementan?</h2>
+   <p>La gestión del conocimiento necesita información confiable y bien organizada. La gestión de la información y la gestión documental ayudan a que esa información se encuentre, se proteja y se conserve. Al compartir experiencias y aprender de ellas, los equipos convierten la información en conocimiento útil.</p>
+  </div>
+  <div class="flow" aria-label="Flujo de la información al conocimiento y a mejores decisiones">
+   <article class="flow-card"><div class="ico">▤</div><h3>Gestión de la información y documental</h3><p>Organiza, protege y facilita el acceso a la información y a los documentos.</p></article><div class="arrow" aria-hidden="true">→</div>
+   <article class="flow-card"><div class="ico">✺</div><h3>Gestión del conocimiento</h3><p>Transforma la información y la experiencia en aprendizaje compartido.</p></article><div class="arrow" aria-hidden="true">→</div>
+   <article class="flow-card"><div class="ico">◎</div><h3>Mejores decisiones</h3><p>Favorece la colaboración, la continuidad y la mejora de los procesos.</p></article>
+  </div>
+ </div>
+</section>
+<section class="practices" id="buenas-practicas">
+ <div class="wrap">
+  <div class="section-head"><span class="eyebrow">Del consejo a la acción</span><h2>6 buenas prácticas que marcan la diferencia</h2><p>Son acciones sencillas que ayudan a cuidar la información, conservar la memoria de la organización y compartir lo que aprendemos.</p></div>
+  <div class="practice-grid">
+   <article class="practice"><div class="practice-top"><span class="num">1</span><span class="symbol">📁</span></div><h3>Organiza y clasifica</h3><p>Guarda los documentos en las carpetas establecidas, usa nombres claros y respeta las versiones para facilitar su búsqueda.</p><a class="try" href="#pongamoslo">Ponlo en práctica →</a></article>
+   <article class="practice"><div class="practice-top"><span class="num">2</span><span class="symbol">🛡️</span></div><h3>Cuida la calidad</h3><p>Verifica que la información sea correcta, completa, actualizada y pertinente antes de compartirla o utilizarla.</p><a class="try" href="#pongamoslo">Ponlo en práctica →</a></article>
+   <article class="practice"><div class="practice-top"><span class="num">3</span><span class="symbol">👥</span></div><h3>Comparte el conocimiento</h3><p>Documenta los pasos de una tarea, comparte experiencias y, cuando sea útil, participa en espacios de intercambio o comunidades de práctica.</p><a class="try" href="#pongamoslo">Ponlo en práctica →</a></article>
+   <article class="practice"><div class="practice-top"><span class="num">4</span><span class="symbol">☁️</span></div><h3>Usa herramientas digitales</h3><p>Aprovecha repositorios, intranets y sistemas autorizados para crear, guardar, compartir y aplicar el conocimiento de forma organizada.</p><a class="try" href="#pongamoslo">Ponlo en práctica →</a></article>
+   <article class="practice"><div class="practice-top"><span class="num">5</span><span class="symbol">🔒</span></div><h3>Respeta la confidencialidad</h3><p>Comparte cada documento solo con quienes tienen autorización y sigue las políticas de seguridad y protección de datos.</p><a class="try" href="#pongamoslo">Ponlo en práctica →</a></article>
+   <article class="practice"><div class="practice-top"><span class="num">6</span><span class="symbol">🔄</span></div><h3>Mejora continuamente</h3><p>Revisa los procesos, escucha sugerencias y adapta las prácticas a las necesidades reales de la organización.</p><a class="try" href="#pongamoslo">Ponlo en práctica →</a></article>
+  </div>
+ </div>
+</section>
+<section class="check-section" id="pongamoslo">
+ <div class="wrap check-grid">
+  <div>
+   <div class="section-head"><span class="eyebrow">Compromiso personal</span><h2>Mi lista de buenas prácticas</h2><p>Marca las acciones que ya aplicas o que quieres comenzar a poner en práctica. Cada hábito ayuda a construir una cultura de colaboración y cuidado de la información.</p></div>
+   <div class="check-panel">
+    <h3>Mi compromiso de hoy</h3>
+    <ul class="checklist" id="checklist">
+     <li><label><input type="checkbox"> Uso nombres claros y versiones identificables para mis archivos.</label></li>
+     <li><label><input type="checkbox"> Verifico los datos antes de compartir información.</label></li>
+     <li><label><input type="checkbox"> Registro los pasos importantes de las tareas que realizo.</label></li>
+     <li><label><input type="checkbox"> Guardo los documentos en los espacios autorizados.</label></li>
+     <li><label><input type="checkbox"> Protejo la información confidencial.</label></li>
+     <li><label><input type="checkbox"> Comparto aprendizajes útiles con mi equipo.</label></li>
+    </ul>
+    <div class="progress"><span id="progressBar"></span></div><div class="progress-copy" id="progressCopy" aria-live="polite">Has marcado 0 de 6 acciones.</div>
+   </div>
+  </div>
+  <div class="scenario">
+   <span class="eyebrow">Situación cotidiana</span><h3>¿Qué harías en este caso?</h3>
+   <p>Una compañera necesita un procedimiento que tú explicaste hace meses. Tienes una copia guardada en tu computador, pero no sabes si está actualizada.</p>
+   <div class="scenario-options">
+    <button class="option" data-answer="a">A. Enviarle de inmediato la copia que tengo.</button>
+    <button class="option" data-answer="b">B. Revisar la versión vigente en el repositorio autorizado y compartir el enlace. Si falta información, actualizar el procedimiento y registrar el aprendizaje.</button>
+    <button class="option" data-answer="c">C. Explicárselo verbalmente y no dejar ningún registro.</button>
+   </div>
+   <div class="feedback" id="feedback" aria-live="polite">Elige una opción para conocer la recomendación.</div>
+  </div>
+ </div>
+</section>
+<section id="recursos">
+ <div class="wrap">
+  <div class="section-head"><span class="eyebrow">Para seguir aprendiendo</span><h2>Recursos y recordatorios</h2><p>Estas ideas pueden servir como guía para el trabajo diario y para las conversaciones del equipo.</p></div>
+  <div class="resources">
+   <article class="resource"><h3>📌 Antes de guardar</h3><p>Pregunta: ¿el archivo tiene un nombre claro, corresponde a la versión correcta y está en el lugar indicado?</p></article>
+   <article class="resource"><h3>💬 Antes de compartir</h3><p>Confirma la calidad de la información, el público destinatario y los permisos de acceso necesarios.</p></article>
+   <article class="resource"><h3>🌱 Después de aprender</h3><p>Registra el procedimiento o la experiencia para que otras personas puedan consultarla y aprovecharla.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="fuentes" style="background:#f7fbfe">
+ <div class="wrap">
+  <div class="section-head">
+   <span class="eyebrow">¿De dónde salen estas recomendaciones?</span>
+   <h2>Fuentes que respaldan la campaña</h2>
+   <p>La campaña retoma ideas de un artículo académico sobre buenas prácticas en gestión del conocimiento y de una publicación del Archivo de Bogotá sobre experiencias de gestión documental en entidades distritales. Las recomendaciones se deben adaptar a las necesidades y reglas de cada organización.</p>
+  </div>
+  <div class="resources">
+   <article class="resource">
+    <h3>📚 Compartir y aplicar el conocimiento</h3>
+    <p>López Trujillo, Marulanda Echeverry y Agudelo Ramírez explican que las organizaciones pueden identificar, organizar, generar, compartir y aplicar el conocimiento. El artículo también presenta elementos como las comunidades de práctica, la comunicación y el uso de herramientas tecnológicas.</p>
+    <p style="margin-top:12px"><a href="http://www.redalyc.org/articulo.oa?id=194214476006" target="_blank" rel="noopener noreferrer">Leer el artículo en Redalyc ↗</a></p>
+   </article>
+   <article class="resource">
+    <h3>🗂️ Fortalecer la gestión documental</h3>
+    <p>La publicación del Archivo de Bogotá destaca experiencias de buenas prácticas en las entidades y organismos del Distrito. Para la campaña, esta referencia se relaciona con el fortalecimiento de los procesos documentales, el trabajo conjunto y la mejora continua.</p>
+    <p style="margin-top:12px"><a href="https://archivobogota.secretariageneral.gov.co/noticias/buenas-pr%C3%A1cticas-gesti%C3%B3n-documental-las-entidades-y-organismos-del-distrito-fueron" target="_blank" rel="noopener noreferrer">Consultar la publicación del Archivo de Bogotá ↗</a></p>
+   </article>
+   <article class="resource">
+    <h3>🔗 ¿Cómo se conectan?</h3>
+    <p>Los documentos organizados permiten encontrar información confiable; los espacios de conversación ayudan a compartir experiencias; y los registros de procedimientos permiten que ese aprendizaje siga disponible para otras personas.</p>
+   </article>
+  </div>
+  <div style="margin-top:24px;background:white;border:1px solid #dceaf2;border-radius:16px;padding:22px">
+   <h3 style="margin-top:0;color:#083d67">Referencias</h3>
+   <p style="padding-left:22px;text-indent:-22px">Archivo de Bogotá. (s. f.). <em>Buenas prácticas de gestión documental de las entidades y organismos del distrito fueron reconocidas…</em> Secretaría General de la Alcaldía Mayor de Bogotá. <a href="https://archivobogota.secretariageneral.gov.co/noticias/buenas-pr%C3%A1cticas-gesti%C3%B3n-documental-las-entidades-y-organismos-del-distrito-fueron" target="_blank" rel="noopener noreferrer">https://archivobogota.secretariageneral.gov.co/</a></p>
+   <p style="padding-left:22px;text-indent:-22px">López Trujillo, M., Marulanda Echeverry, C. E., &amp; Agudelo Ramírez, J. C. (2010). Una propuesta sobre buenas prácticas en gestión del conocimiento. <em>Revista Virtual Universidad Católica del Norte,</em> (30), 1–25. <a href="http://www.redalyc.org/articulo.oa?id=194214476006" target="_blank" rel="noopener noreferrer">http://www.redalyc.org/articulo.oa?id=194214476006</a></p>
+  </div>
+ </div>
+</section>
+
+<section class="closing"><div class="wrap closing-inner"><div><h2>Tu información también puede generar conocimiento.</h2><p>Cuídala, compártela de forma responsable y ayuda a que el aprendizaje permanezca en la organización.</p></div><div class="seal" aria-hidden="true">🌿</div></div></section>
+</main>
+<footer><div class="wrap footer-row"><p><strong>Conecta &amp; Comparte</strong> · Campaña de buenas prácticas</p><p>Aprende · Aplica · Comparte</p></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+const checks=[...document.querySelectorAll('#checklist input')],bar=document.getElementById('progressBar'),copy=document.getElementById('progressCopy');
+function updateProgress(){const done=checks.filter(c=>c.checked).length;bar.style.width=(done/checks.length*100)+'%';copy.textContent=`Has marcado ${done} de ${checks.length} acciones.`+(done===checks.length?' ¡Excelente! Estás ayudando a fortalecer la cultura de buenas prácticas.':'');}
+checks.forEach(c=>c.addEventListener('change',updateProgress));
+const feedback=document.getElementById('feedback');
+document.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.option').forEach(b=>b.style.borderColor='#d7e8f1');btn.style.borderColor='#0879b9';const answers={a:'Todavía no es la mejor opción: la copia podría estar desactualizada. Antes de enviarla, verifica que sea la versión vigente y que la persona tenga permiso para acceder.',b:'¡Correcto! Consultar el repositorio autorizado ayuda a usar una versión vigente. Registrar las actualizaciones conserva el conocimiento y facilita que otras personas aprendan del proceso.',c:'Hablar puede ayudar, pero si el procedimiento solo queda en la memoria de una persona, el equipo podría perder ese conocimiento. Conviene dejar un registro claro y accesible.'};feedback.textContent=answers[btn.dataset.answer]}));
+</script>
+</body>
+</html>
